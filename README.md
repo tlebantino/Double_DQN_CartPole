@@ -1,5 +1,5 @@
 # Double_DQN_CartPole
-Double Deep Q Network (DQN) approach to solving the OpenAI CartPole problem with a Fully-Connected Neural Network (FCNN).
+Double Deep Q Network (DQN) approach to solving the OpenAI Cart-Pole problem with a Fully-Connected Neural Network (FCNN).  This approach uses the PyTorch framework.
 
 # Cart-Pole Problem
 The cart-pole problem is a classic highly non-linear control problem, which involves moving a cart left or right to simultaneously balance an attached pole in the upright position.  The four states in consideration include the cart position, cart velocity, pole angle and pole angular velocity.  The action space includes imparting a force on the cart to move it either left or right depending on the current state.  The criteria for balancing the cart involves (1) ensuring the pole angle doesn’t exceed 12 degrees from the center in either direction and (2) ensuring the cart doesn’t move 2.4 units from the center in either direction.  A reward of +1 is given for every time step the cart meets the criteria listed above.  The episode will terminate when either (1) or (2) are violated and if the episode exceeds 200 time steps.  The criteria for solving the problem, as defined by OpenAI, is described as obtaining an average reward of greater than or equal to 195 over 100 consecutive episodes.
